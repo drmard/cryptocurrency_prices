@@ -1,0 +1,20 @@
+android_binary(
+    name = 'app',
+    manifest = 'AndroidManifest.xml',
+    manifest_entries = {
+      'min_sdk_version':17,
+      'target_sdk_version':27
+    },
+    keystore = ':keystore',
+    deps = [
+        '//aar:lib_aar_parser',
+        '//java/buck/cryptoprices:activity',
+        '//res/buck/cryptoprices:res',
+    ],
+)
+
+keystore(
+  name = 'keystore',
+  store = 'keystore',
+  properties = 'keystore.properties',
+)

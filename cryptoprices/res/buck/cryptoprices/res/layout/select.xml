@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/sel_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textColor="#222222"/>
+
+        <ImageView
+            android:id="@+id/selec"
+            android:layout_height="@dimen/image_view_w"
+            android:layout_width="@dimen/image_view_w"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/bg_s"
+            android:background="@layout/shape7" 
+            android:onClick="Click_s"
+        />
+    </RelativeLayout>
+    <!--
+    <Spinner android:id="@+id/sel_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:minWidth="640dip"
+        android:background="#ffffff"
+        android:drawSelectorOnTop="true"
+        />   -->  <!--
+    <ListView
+        android:id="@+id/cr_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        />   -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="@layout/shape7"
+        android:layout_marginTop="@dimen/table_margin_top">
+
+    <ScrollView
+        android:id="@+id/h_scrollv"
+        android:layout_width="wrap_content"    
+        android:layout_height="wrap_content" 
+        android:fillViewport="true"
+        android:orientation="vertical">
+            <TableLayout
+                android:id="@+id/h_layout"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"
+                >
+            </TableLayout> 
+    </ScrollView>
+    <ScrollView
+        android:id="@+id/c_scrollv"
+        android:layout_width="wrap_content"    
+        android:layout_height="fill_parent" 
+        android:fillViewport="true"
+        android:orientation="vertical">
+            <TableLayout
+                android:id="@+id/cur_layout"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content">
+            </TableLayout> 
+    </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>
+

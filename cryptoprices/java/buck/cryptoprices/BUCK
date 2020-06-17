@@ -1,0 +1,13 @@
+android_library(
+  name = 'activity',
+  srcs = glob(['*.java']),
+  visibility = [ 'PUBLIC' ],
+  deps = [
+          '//res/buck/cryptoprices:res',
+          '//aar:lib_aar_parser',
+  ],
+)
+prebuilt_jar(
+  name = 'htmlcleaner',
+  binary_jar = 'htmlcleaner-2.22.jar',
+)

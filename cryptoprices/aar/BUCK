@@ -1,0 +1,5 @@
+android_prebuilt_aar(
+  name = 'lib_aar_parser',
+  aar = 'aar_parser.aar',
+  visibility = ['PUBLIC'],
+)

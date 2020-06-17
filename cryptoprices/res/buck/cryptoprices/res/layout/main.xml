@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/control_bars"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:background="@android:color/white">
+
+        <RelativeLayout
+            android:id="@+id/indicator_bar"
+            android:paddingRight="2dp"
+            android:paddingLeft="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_height="@dimen/icon_bar_height"
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/fcb"
+                android:layout_height="@dimen/icon_bar_height"
+                android:layout_width="@dimen/icon_bar_height"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/scb"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onClick"
+                android:src="@drawable/bg_sh" 
+                android:background="@layout/shape4"
+                android:contentDescription="@string/empty"/>
+
+            <ImageView
+                android:id="@+id/scb"
+                android:layout_height="@dimen/icon_bar_height"
+                android:layout_width="@dimen/icon_bar_height"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onClick"
+                android:src="@drawable/bg_close" 
+                android:background="@layout/shape4"
+                android:contentDescription="@string/empty"/>
+
+            <ImageView
+                android:id="@+id/app_sec_icon"
+                android:layout_height="@dimen/app_icon_height"
+                android:layout_width="@dimen/app_icon_height"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="2dp"
+                android:clickable="false"
+                android:onClick="onClick"
+                android:src="@drawable/br_c"
+                android:background="@layout/shape4"/>
+        </RelativeLayout>
+    <!--
+    <Button
+        android:text="Click Me"
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>   -->
+
+</RelativeLayout>

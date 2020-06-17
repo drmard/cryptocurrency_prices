@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">[CPrices]</string>
+    <string name="empty"></string>
+    <string name="title_main">Cryptocurrency Prices</string>
+
+    <string-array name="currencys">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>RUB</item>
+        <item>PLN</item>
+        <item>UAH</item>
+        <item>CNY</item>
+    </string-array>
+
+</resources>

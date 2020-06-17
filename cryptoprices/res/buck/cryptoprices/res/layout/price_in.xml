@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp"
+    android:orientation="horizontal"
+    android:layout_gravity="center_vertical">  
+        <TextView  
+            android:id="@+id/search_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="2dp"
+            android:layout_gravity="center_vertical"
+            android:text="Price in: "
+            android:textSize="13sp"
+            android:textColor="#222222"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/spinner_border"
+            android:orientation="horizontal">
+            <!--
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="80dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="2dp"
+                android:background="@android:color/transparent"
+                />  -->
+            <RelativeLayout
+                android:id="@+id/explist"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_centerVertical="true">  
+
+<!--
+                <Button
+                  android:id="@+id/btnfiat"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_centerVertical="true"
+                  android:drawableLeft="@drawable/exp"
+                  android:gravity="right|center_vertical" />  -->
+
+                <TextView  
+                    android:id="@+id/fiat_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:layout_alignParentLeft="true"
+                    android:text=" USD"
+                    android:textSize="12sp"
+                    android:textColor="#222222"/>
+                <ImageView
+                    android:id="@+id/img_down"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:layout_marginRight="8dp"
+android:layout_marginLeft="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/exp"
+                    />
+                </RelativeLayout>
+                
+            </RelativeLayout>
+</LinearLayout>
